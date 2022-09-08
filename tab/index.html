@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Hamburger Menu</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+  <div class="p-tab">
+    <ul class="js-tabList p-tab__list">
+      <li class="p-tab__item"><button type="button" class="js-tabButton is-btnActive c-button p-tab__button" aria-expanded="true" aria-controls="tab01">ランチ</button></li>
+      <li class="p-tab__item"><button type="button" class="js-tabButton c-button p-tab__button" aria-expanded="false" aria-controls="tab02">ドリンク</button></li>
+      <li class="p-tab__item"><button type="button" class="js-tabButton c-button p-tab__button" aria-expanded="false" aria-controls="tab03">ディナー</button></li>
+    </ul>
+
+    <div class="js-tabContents p-tab__contents">
+      <div id="tab01" class="js-tabPanel p-tab__panel is-tabActive" aria-hidden="false">
+        <p>ひとつめのタブの中身</p>
+      </div>
+      <div id="tab02" class="js-tabPanel p-tab__panel" aria-hidden="true">
+        <p>ふたつめのタブの中身</p>
+      </div>
+      <div id="tab03" class="js-tabPanel p-tab__panel" aria-hidden="true">
+        <p>みっつめのタブの中身</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="p-tab">
+    <ul class="js-tabList p-tab__list">
+      <li class="p-tab__item"><button type="button" class="js-tabButton is-btnActive c-button p-tab__button" aria-expanded="true" aria-controls="tab04">ランチ</button></li>
+      <li class="p-tab__item"><button type="button" class="js-tabButton c-button p-tab__button" aria-expanded="false" aria-controls="tab05">ドリンク</button></li>
+      <li class="p-tab__item"><button type="button" class="js-tabButton c-button p-tab__button" aria-expanded="false" aria-controls="tab06">ディナー</button></li>
+    </ul>
+
+    <div class="js-tabContents p-tab__contents">
+      <div id="tab04" class="js-tabPanel p-tab__panel is-tabActive" aria-hidden="false">
+        <p>ひとつめのタブの中身</p>
+      </div>
+      <div id="tab05" class="js-tabPanel p-tab__panel" aria-hidden="true">
+        <p>ふたつめのタブの中身</p>
+      </div>
+      <div id="tab06" class="js-tabPanel p-tab__panel" aria-hidden="true">
+        <p>みっつめのタブの中身</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

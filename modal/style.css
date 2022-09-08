@@ -1,0 +1,116 @@
+body {
+  background-color: #f8f8f8;
+}
+
+body.is-modalActive {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.l-main {
+  margin: 5rem 8rem;
+}
+
+#js-mask {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #333;
+  opacity: .5;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.p-grid.--center {
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-grid__item {
+  width: 30%;
+}
+
+.p-card__inner {
+  padding: 3rem;
+  background-color: #fff;
+}
+
+.p-modal {
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3rem;
+  width: 640px;
+  background-color: #fff;
+  text-align: center;
+  -webkit-filter: drop-shadow(0px 2px 6px #888);
+  filter: drop-shadow(0px 2px 6px #888);
+}
+
+.p-modal[aria-hidden="true"] {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.p-modal[aria-hidden="false"] {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility .2s ease-in .1s, opacity .2s ease-in .1s;
+}
+
+.c-button {
+  border: none;
+  background-color: #fff;
+}
+
+.p-buttonOpen {
+  margin: 2rem auto 0;
+  padding: 1rem 2rem;
+  border-radius: 50em;
+  background-color: tomato;
+  font-size: 1rem;
+}
+
+.p-buttonClose {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+/* .p-buttonClose:hover,
+.p-buttonClose:focus {
+} */
+
+.p-buttonClose::before,
+.p-buttonClose::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  width: 24px;
+  height: 1px;
+  background-color: #333;
+  outline: none;
+}
+
+.p-buttonClose::before {
+  transform: rotate(45deg);
+}
+
+.p-buttonClose::after {
+  transform: rotate(-45deg);
+}
